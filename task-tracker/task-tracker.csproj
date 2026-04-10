@@ -10,6 +10,13 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.5" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="10.1.7" />
+    <PackageReference Include="YamlDotNet" Version="17.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="../openapi.yaml" Link="openapi.yaml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>
